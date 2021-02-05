@@ -1,4 +1,6 @@
-export default function PersonCard(props) {
+//a component for rendering person table
+
+export default function PersonTable(props) {
   return (
     <div>
       <table className="table is-bordered mb-3">
