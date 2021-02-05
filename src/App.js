@@ -37,7 +37,7 @@ function App() {
 
         <div className="field">
           <label className="label">Age</label>
-          <input className="input" type="number" placeholder="e.q Age"></input>
+          <input className="input" type="number" placeholder="e.q 30"></input>
         </div>
 
         <button className="button is-primary is-fullwidth">Submit</button>
