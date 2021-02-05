@@ -1,4 +1,4 @@
-import PersonTable from "./PersonTable";
+import ItemTable from "./ItemTable";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   //load locationStorage
   useEffect(() => {
-    const persons = localStorage.getItem("persons");
+    const items = localStorage.getItem("items");
     // ...
   }, []);
 
@@ -26,7 +26,10 @@ function App() {
 
         <div className="field">
           <label className="label">Gender</label>
-          <select className="input" type="text" placeholder="e.q Male">
+          <select className="input" type="text" placeholder="Please select ..">
+            <option value="" disabled selected hidden>
+              -- Select Gender --
+            </option>
             <option>Male</option>
             <option>Female</option>
           </select>
@@ -44,7 +47,7 @@ function App() {
         {/* display tables for all persons */}
         <p className="is-4 title has-text-centered">Person List</p>
         {/* sample table */}
-        <PersonTable name={"Bob"} gender={"Male"} age={"50"} />
+        <ItemTable name={"Bob"} gender={"Male"} age={"50"} />
         <p>Your name and code here</p>
       </div>
     </div>
